@@ -1,0 +1,42 @@
+@import "../../styles/Variaveis";
+
+.texto__principal{ 
+display: flex;
+align-items: center;
+justify-content: center;
+color: $text-title;
+font-family: $fonte-especial;
+font-size: 32px;
+text-transform: uppercase;
+margin-top: 40px;
+margin-bottom: 40px;
+}
+
+.treinadores {
+    display: flex;
+    margin-right: 120px;
+    margin-left: 120px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 100px;
+    justify-content: center;
+
+    &__foto {
+        width: 400px;
+        height: 400px;
+        filter: drop-shadow(12px 12px 10px rgba(0,0,0.6));
+        transition: .5s ease-out;
+    }
+    :hover {
+        filter: none;
+    }
+}
+
+.section {
+    font-family: $fonte-padrao;
+    font-size: 21px;
+    color: $text-title;
+    text-align: justify;
+
+
+}

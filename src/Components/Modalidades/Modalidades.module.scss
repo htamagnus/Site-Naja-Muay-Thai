@@ -1,0 +1,54 @@
+@import "../../styles/Variaveis";
+
+.modalidades {
+    background-color: $fundo-site;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 100px;
+    row-gap: 60px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.imgmodalidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 380px;
+    width: 440px;
+    height: 600px;
+    
+    &:hover {
+        filter: grayscale(.9);
+        transition: 0.4s ease-in-out;
+    }
+
+    &__texto {
+        color: white;
+        font-family: $fonte-especial;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
+    &__botao {
+        background-color: transparent;
+        font-family: $fonte-especial;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+        border: 1px solid white;
+        width: 280px;
+        height: 38px;
+        border-radius: 4px;
+
+        &:hover {
+            background-color: black;
+            transition: 0.4s ease-in-out;
+
+        }
+    }
+}

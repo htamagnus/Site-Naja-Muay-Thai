@@ -1,0 +1,14 @@
+@import "../../styles/Variaveis";
+
+.texto__principal {
+    height: 62px;
+
+    background: $background;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $fonte-especial;
+    font-size: 24px;
+    text-transform: uppercase;
+}

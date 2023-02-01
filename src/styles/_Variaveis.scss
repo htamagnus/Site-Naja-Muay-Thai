@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+//Tipografia: 
+$fonte-padrao:  'Lato', sans-serif;
+$fonte-especial: 'Belleza', sans-serif;
+
+//Cores:
+$background: radial-gradient(circle, rgba(73,1,1,1) 34%, rgba(139,0,0,1) 100%);
+$text-title: #614646;
+$color-site: #8B0000;
+$fundo-site: #fffafa; //branco neve
