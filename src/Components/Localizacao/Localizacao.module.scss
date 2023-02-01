@@ -17,6 +17,8 @@
 .agendar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 20px;
     &__titulo {
         margin-bottom: 20px;
     }
@@ -30,8 +32,25 @@
         text-transform: uppercase;
         border-radius: 4px;
     }
+
+    &__botao {
+        height: 60px;
+        font-family: $fonte-especial;
+        font-size: 22px;
+        cursor: pointer;
+        color: white;
+        border: 1px solid white;
+        background-color: $color-site;
+        border-radius: 4px;
+    
+        &:hover {
+          background-color: $text-title;
+          color: white;
+          transition: 0.4s ease-in-out;
+        }
+    }
 }
 
-input:focus, select:focus {
+ select:focus {
     outline: 0;
 }

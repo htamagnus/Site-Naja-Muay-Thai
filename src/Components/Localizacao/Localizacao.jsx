@@ -30,9 +30,20 @@ export default function Localizacao() {
           <option value="3">Taekwondo</option>
           <option value="4">Funcional</option>
         </select>
-        <input placeholder= "Qual a melhor data?" type="date"></input>
+        <select
+          className={styles.agendar__selecionar}
+          onChange={(opcao) => setOpcao(opcao.target.value)}
+        >
+          <option value="" disabled selected hidden>
+            Escolha a data
+          </option>
+          <option value="5">Muay Thai</option>
+          <option value="6">Boxe</option>
+          <option value="7">Taekwondo</option>
+          <option value="8">Funcional</option>
+        </select>
+        <button className={styles.agendar__botao}>Agendar</button>
       </section>
-
     </div>
   );
 }
