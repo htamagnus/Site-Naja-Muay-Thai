@@ -41,9 +41,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.funcional__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
       </div>
 
@@ -70,9 +72,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.funcional__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
         <img id={styles.esconder} className={styles.funcional__foto} src={FotoFuncional2} />
       </div>
@@ -102,9 +106,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.funcional__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
       </div>
       <Texto texto="Turmas e horários funcional" />

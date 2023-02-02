@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MuayThai.module.scss";
 import Texto from "../../Components/Texto/Texto";
-import Footer from "../../Components/Footer/Footer"
+import Footer from "../../Components/Footer/Footer";
 import FotoMuayThai from "../../assets/FotoMuayThai.jpg";
 import FotoMuayThai2 from "../../assets/FotoMuayThai2.jpg";
 import FotoMuayThai3 from "../../assets/FotoMuayThai3.jpg";
@@ -9,6 +9,10 @@ import { TiArrowBack } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export default function MuayThai() {
+  function AbrirWhats() {
+    window.location.href = "https://wa.me/555198242196";
+  }
+
   return (
     <>
       <Texto texto="Muay Thai" />
@@ -38,9 +42,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.muaythai__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
       </div>
 
@@ -65,15 +71,25 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
-          <button className={styles.muaythai__botao}>
-            Agende sua aula grátis!
-          </button>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
+            <button className={styles.muaythai__botao}>
+              Agende sua aula grátis!
+            </button>
+          </a>
         </section>
-        <img id={styles.esconder} className={styles.muaythai__foto} src={FotoMuayThai2} />
+        <img
+          id={styles.esconder}
+          className={styles.muaythai__foto}
+          src={FotoMuayThai2}
+        />
       </div>
 
       <div className={styles.muaythai}>
-        <img id={styles.esconder} className={styles.muaythai__foto} src={FotoMuayThai3} />
+        <img
+          id={styles.esconder}
+          className={styles.muaythai__foto}
+          src={FotoMuayThai3}
+        />
         <section className={styles.muaythai__textos}>
           <h2 className={styles.muaythai__titulo}>
             Quais os benefícios do Muay Thai?
@@ -97,9 +113,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.muaythai__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
       </div>
       <Texto texto="Turmas e horários Muay Thai" />
@@ -108,34 +126,42 @@ export default function MuayThai() {
         <section className={styles.horarios__card}>
           <h2 className={styles.horarios__titulo}>Infantil</h2>
           <p className={styles.horarios__paragrafo}>
-            <strong>Terça-Feira:</strong> <br />18:00
-            <br /><br />
-            <strong>Sexta-feira:</strong><br /> 18:00
+            <strong>Terça-Feira:</strong> <br />
+            18:00
+            <br />
+            <br />
+            <strong>Sexta-feira:</strong>
+            <br /> 18:00
             <br />
           </p>
-          <button className={styles.horarios__botao}>Agendar experimental</button>
+          <button className={styles.horarios__botao}>
+            Agendar experimental
+          </button>
         </section>
 
         <section className={styles.horarios__card}>
           <h2 className={styles.horarios__titulo}>Feminino</h2>
           <p className={styles.horarios__paragrafo}>
-            <strong>Segunda-feira:</strong> <br/>
+            <strong>Segunda-feira:</strong> <br />
             07:00 e 14:00 <br />
             <br />
             <strong>Quarta-feira:</strong> <br />
             07:00 e 14:00
             <br /> <br />
-           <strong>Sexta-feira: </strong>
-           <br />
-           07:00 e 14:00
+            <strong>Sexta-feira: </strong>
+            <br />
+            07:00 e 14:00
           </p>
-          <button className={styles.horarios__botao}>Agendar experimental</button>
+          <button className={styles.horarios__botao}>
+            Agendar experimental
+          </button>
         </section>
 
         <section className={styles.horarios__card}>
           <h2 className={styles.horarios__titulo}>Misto</h2>
           <p className={styles.horarios__paragrafo}>
-            <strong>Segunda-feira:</strong> <br />19:00, 20:00 e 21:00
+            <strong>Segunda-feira:</strong> <br />
+            19:00, 20:00 e 21:00
             <br />
             <strong>Terça-feira:</strong> <br /> 10:00
             <br />
@@ -144,20 +170,23 @@ export default function MuayThai() {
             <strong>Quinta-feira:</strong> <br /> 10:00
             <br />
             <strong>Sexta-feira:</strong> <br /> 19:00 e 20:00
-
           </p>
-          <button className={styles.horarios__botao}>Agendar experimental</button>
+          <button className={styles.horarios__botao}>
+            Agendar experimental
+          </button>
         </section>
 
         <section className={styles.horarios__card}>
           <h2 className={styles.horarios__titulo}>Atletas profissionais</h2>
           <p className={styles.horarios__paragrafo}>
-          <strong>Sábado:</strong>  18:00
+            <strong>Sábado:</strong> 18:00
           </p>
-          <button className={styles.horarios__botao}>Agendar experimental</button>
+          <button className={styles.horarios__botao}>
+            Agendar experimental
+          </button>
         </section>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

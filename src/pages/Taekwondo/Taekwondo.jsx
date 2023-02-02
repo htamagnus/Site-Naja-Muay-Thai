@@ -39,9 +39,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.taekwondo__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
       </div>
 
@@ -67,9 +69,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.taekwondo__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
         <img id={styles.esconder} className={styles.taekwondo__foto} src={FotoTaekwondo2} />
       </div>
@@ -98,9 +102,11 @@ export default function MuayThai() {
             recusandae, reprehenderit officia nobis veritatis obcaecati
             assumenda labore molestias! Dolore, eum.
           </p>
+          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
           <button className={styles.taekwondo__botao}>
             Agende sua aula grátis!
           </button>
+          </a>
         </section>
       </div>
       <Texto texto="Turmas e horários taekwondo" />
