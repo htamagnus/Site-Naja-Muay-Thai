@@ -27,14 +27,14 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <BsInstagram size={28} style={{ color: "white" }} />
+            <BsInstagram size={24} style={{ color: "white" }} />
           </a>
           <a className={styles.links__item}
             href="https://www.facebook.com/julinho.estofador"
             target="_blank"
             rel="noreferrer"
           >
-            <BsFacebook size={28} style={{ color: "white" }} />
+            <BsFacebook size={24} style={{ color: "white" }} />
           </a>
 
           <a className={styles.links__item}
@@ -42,7 +42,7 @@ export default function Header() {
             target="_blank"
             rel="noreferrer"
           >
-            <BsWhatsapp size={28} style={{ color: "white" }} />
+            <BsWhatsapp size={24} style={{ color: "white" }} />
           </a>
         </div>
       </ul>
