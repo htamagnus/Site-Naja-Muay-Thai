@@ -38,8 +38,9 @@
 
 @media screen and (max-width: 480px) {
   .navegacao {
-    height: 92px;
+    height: 82px;
     padding-left: 16px;
+    padding-top: 0px;
     &__li {
       display: none;
     }
