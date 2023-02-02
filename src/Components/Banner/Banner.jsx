@@ -1,15 +1,15 @@
 import React from "react";
-import BannerNaja2 from "../../assets/BannerNaja2.jpg";
+import BannerNaja from "../../assets/BannerNaja.png";
 import styles from "./Banner.module.scss"
 
 export default function Banner() {
   return (
     <>
       <div className={styles.banner} 
-      style={{ backgroundImage: `url(${BannerNaja2})`,
+      style={{ backgroundImage: `url(${BannerNaja})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    height: 400,
+                    height: 320,
                     width: "100%", }}
                     ></div>
     </>
