@@ -69,11 +69,11 @@ export default function MuayThai() {
             Agende sua aula grátis!
           </button>
         </section>
-        <img className={styles.muaythai__foto} src={FotoMuayThai2} />
+        <img id={styles.esconder} className={styles.muaythai__foto} src={FotoMuayThai2} />
       </div>
 
       <div className={styles.muaythai}>
-        <img className={styles.muaythai__foto} src={FotoMuayThai3} />
+        <img id={styles.esconder} className={styles.muaythai__foto} src={FotoMuayThai3} />
         <section className={styles.muaythai__textos}>
           <h2 className={styles.muaythai__titulo}>
             Quais os benefícios do Muay Thai?

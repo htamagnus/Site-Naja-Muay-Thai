@@ -69,11 +69,11 @@ export default function MuayThai() {
             Agende sua aula grátis!
           </button>
         </section>
-        <img className={styles.boxe__foto} src={FotoBoxe2} />
+        <img id={styles.esconder} className={styles.boxe__foto} src={FotoBoxe2} />
       </div>
 
       <div className={styles.boxe}>
-        <img className={styles.boxe__foto} src={FotoBoxe3} />
+        <img id={styles.esconder} className={styles.boxe__foto} src={FotoBoxe3} />
         <section className={styles.boxe__textos}>
           <h2 className={styles.boxe__titulo}>Quais os benefícios do Boxe?</h2>
           <p className={styles.boxe__paragrafo}>

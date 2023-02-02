@@ -74,11 +74,11 @@ export default function MuayThai() {
             Agende sua aula grátis!
           </button>
         </section>
-        <img className={styles.funcional__foto} src={FotoFuncional2} />
+        <img id={styles.esconder} className={styles.funcional__foto} src={FotoFuncional2} />
       </div>
 
       <div className={styles.funcional}>
-        <img className={styles.funcional__foto} src={FotoFuncional3} />
+        <img id={styles.esconder} className={styles.funcional__foto} src={FotoFuncional3} />
         <section className={styles.funcional__textos}>
           <h2 className={styles.funcional__titulo}>
             Treinamento Funcional Emagrece? Tem resultado?

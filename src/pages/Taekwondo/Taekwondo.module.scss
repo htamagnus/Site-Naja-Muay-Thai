@@ -19,7 +19,10 @@
   }
 
   &__textos {
-    text-align: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__titulo {
@@ -109,4 +112,39 @@
           transition: 0.4s ease-in-out;
         }
     }
+}
+
+@media screen and (max-width: 480px) {
+  .taekwondo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fonte-padrao;
+    font-size: 16px;
+    color: $text-title;
+    padding-right: 30px;
+    padding-left: 30px;
+
+
+    &__foto{
+      width: 100%;
+      height: 300px;
+      margin: 0 auto;
+    }
+    &__textos {
+      text-align: justify;
+    }
+
+    &__titulo {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__botao {
+      margin-bottom: 20px;
+    }
+  }
+  #esconder {
+    display: none;
+  }
 }

@@ -71,11 +71,11 @@ export default function MuayThai() {
             Agende sua aula grátis!
           </button>
         </section>
-        <img className={styles.taekwondo__foto} src={FotoTaekwondo2} />
+        <img id={styles.esconder} className={styles.taekwondo__foto} src={FotoTaekwondo2} />
       </div>
 
       <div className={styles.taekwondo}>
-        <img className={styles.taekwondo__foto} src={FotoTaekwondo3} />
+        <img id={styles.esconder} className={styles.taekwondo__foto} src={FotoTaekwondo3} />
         <section className={styles.taekwondo__textos}>
           <h2 className={styles.taekwondo__titulo}>
             Quais os benefícios do taekwondo?
