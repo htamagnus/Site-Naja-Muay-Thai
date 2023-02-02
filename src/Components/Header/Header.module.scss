@@ -1,38 +1,59 @@
 @import "../../styles/Variaveis";
 
-.navegacao{
-    background-color: black;
-    color: white;
-    font-family: $fonte-padrao;
-    font-size: 16px;
-    text-transform: uppercase;
-    padding-left: 100px;
-    padding-top: 10px;
-    
-    &__listas {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 60px;
-        list-style: none;
-        height: 100px;
-        padding-top: 0px;
-        text-decoration: none;
-    }
-    &__li {
-        cursor: pointer;
-        text-decoration: none;
-        color: white;
-        &:hover {
-            color: $text-title;
-            transition: 0.3s ease-in-out;  
+.navegacao {
+  background-color: black;
+  color: white;
+  font-family: $fonte-padrao;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding-left: 100px;
+  padding-top: 10px;
 
-        }
+  &__listas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    height: 100px;
+    padding-top: 0px;
+    text-decoration: none;
+  }
+  &__li {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: $text-title;
+      transition: 0.3s ease-in-out;
     }
+  }
 }
 
 .links {
-    display: flex;
-    margin-left: 420px;
-    gap: 20px;
+  display: flex;
+  margin-left: 420px;
+  gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .navegacao {
+    height: 100px;
+    padding-left: 30px;
+    &__li {
+      display: none;
+    }
+
+    &__logo {
+      width: 100px;
+    }
+  }
+  .links {
+    margin: 0 auto;
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

@@ -1,56 +1,72 @@
 @import "../../styles/Variaveis";
 
 .maps {
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 120px;
-    font-family: $fonte-padrao;
-    color: white;
-    text-transform: uppercase;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 120px;
+  font-family: $fonte-padrao;
+  color: white;
+  text-transform: uppercase;
 }
-
 
 .agendar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    &__titulo {
-        margin-bottom: 20px;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  &__titulo {
+    margin-bottom: 20px;
+  }
 
-    &__selecionar {
-        font-family: $fonte-padrao;
-        font-size: 16px;
-        text-align: center;
-        width: 100%;
-        height: 60px;
-        text-transform: uppercase;
-        border-radius: 4px;
-    }
+  &__selecionar {
+    font-family: $fonte-padrao;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }
 
-    &__botao {
-        height: 60px;
-        font-family: $fonte-especial;
-        font-size: 22px;
-        cursor: pointer;
-        color: white;
-        border: 1px solid white;
-        background-color: $color-site;
-        border-radius: 4px;
-    
-        &:hover {
-          background-color: $text-title;
-          color: white;
-          transition: 0.4s ease-in-out;
-        }
+  &__botao {
+    height: 60px;
+    font-family: $fonte-especial;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid white;
+    background-color: $color-site;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: $text-title;
+      color: white;
+      transition: 0.4s ease-in-out;
     }
+  }
 }
 
- select:focus {
-    outline: 0;
+select:focus {
+  outline: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+
+  .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
 }

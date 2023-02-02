@@ -37,6 +37,27 @@ margin-bottom: 40px;
     font-size: 21px;
     color: $text-title;
     text-align: justify;
+}
 
+@media screen and (max-width: 480px) {
+    .treinadores{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 30px 30px 30px;
+    gap: 0px;
+    justify-content: center;
+    margin-top: 0px;
 
+    &__foto {
+        width: 340px;
+        height: 340px;
+        filter: drop-shadow(12px 12px 10px rgba(0,0,0.6));
+        transition: .5s ease-out;
+        margin-bottom: 20px;
+    }
+    :hover {
+        filter: none;
+    }
+}
 }

@@ -1,10 +1,6 @@
-import React, { useState } from "react";
 import styles from "./Localizacao.module.scss";
 
 export default function Localizacao() {
-  const [opcao, setOpcao] = useState();
-  console.log(opcao);
-
   return (
     <div id="maps" className={styles.maps}>
       <iframe
@@ -20,7 +16,6 @@ export default function Localizacao() {
         <h2 className={styles.agendar__titulo}>Agende sua aula experimental</h2>
         <select
           className={styles.agendar__selecionar}
-          onChange={(opcao) => setOpcao(opcao.target.value)}
         >
           <option value="" disabled selected hidden>
             Escolha a modalidade
@@ -32,7 +27,6 @@ export default function Localizacao() {
         </select>
         <select
           className={styles.agendar__selecionar}
-          onChange={(opcao) => setOpcao(opcao.target.value)}
         >
           <option value="" disabled selected hidden>
             Escolha a data

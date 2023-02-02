@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 80%;
+        width: 100%;
+    }
+}

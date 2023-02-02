@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className={styles.navegacao}>
       <ul className={styles.navegacao__listas}>
-        <img
+        <img className={styles.navegacao__logo}
           src={LogoNaja}
           alt="Logo NajaTeam Torres, redondo com uma cobra no meio"
         ></img>
@@ -22,14 +22,14 @@ export default function Header() {
         <li className={styles.navegacao__li}>Sobre</li>
         </Link>
         <div className={styles.links}>
-          <a
+          <a className={styles.links__item}
             href="https://www.instagram.com/najatteam/"
             target="_blank"
             rel="noreferrer"
           >
             <BsInstagram size={28} style={{ color: "white" }} />
           </a>
-          <a
+          <a className={styles.links__item}
             href="https://www.facebook.com/julinho.estofador"
             target="_blank"
             rel="noreferrer"
@@ -37,7 +37,7 @@ export default function Header() {
             <BsFacebook size={28} style={{ color: "white" }} />
           </a>
 
-          <a
+          <a className={styles.links__item}
             href=" https://wa.me/555198242196"
             target="_blank"
             rel="noreferrer"
