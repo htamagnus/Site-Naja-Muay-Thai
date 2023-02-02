@@ -50,7 +50,7 @@ export default function MuayThai() {
       <div className={styles.funcional}>
         <section className={styles.funcional__textos}>
           <h2 className={styles.funcional__titulo}>
-            Qual a diferença entre Treinamento Funcional e Musculação?
+            Qual a diferença entre Funcional e Musculação?
           </h2>
           <p className={styles.funcional__paragrafo}>
             Todo dia temos um treino diferente, não existem “fichas de treino” e
