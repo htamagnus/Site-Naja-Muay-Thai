@@ -1,46 +1,46 @@
 @import "../../styles/Variaveis";
 
-.texto__principal{ 
-display: flex;
-align-items: center;
-justify-content: center;
-color: $text-title;
-font-family: $fonte-especial;
-font-size: 32px;
-text-transform: uppercase;
-margin-top: 40px;
-margin-bottom: 40px;
+.texto__principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $text-title;
+  font-family: $fonte-especial;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .treinadores {
-    display: flex;
-    margin-right: 120px;
-    margin-left: 120px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    gap: 100px;
-    justify-content: center;
+  display: flex;
+  margin-right: 120px;
+  margin-left: 120px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 100px;
+  justify-content: center;
 
-    &__foto {
-        width: 400px;
-        height: 400px;
-        filter: drop-shadow(12px 12px 10px rgba(0,0,0.6));
-        transition: .5s ease-out;
-    }
-    :hover {
-        filter: none;
-    }
+  &__foto {
+    width: 400px;
+    height: 400px;
+    filter: drop-shadow(12px 12px 10px rgba(0, 0, 0.6));
+    transition: 0.5s ease-out;
+  }
+  :hover {
+    filter: none;
+  }
 }
 
 .section {
-    font-family: $fonte-padrao;
-    font-size: 21px;
-    color: $text-title;
-    text-align: justify;
+  font-family: $fonte-padrao;
+  font-size: 21px;
+  color: $text-title;
+  text-align: justify;
 }
 
 @media screen and (max-width: 480px) {
-    .treinadores{
+  .treinadores {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -50,22 +50,34 @@ margin-bottom: 40px;
     margin-top: 0px;
 
     &__foto {
-        width: 340px;
-        height: 340px;
-        filter: drop-shadow(12px 12px 10px rgba(0,0,0.6));
-        transition: .5s ease-out;
-        margin-bottom: 20px;
+      width: 340px;
+      height: 340px;
+      filter: drop-shadow(12px 12px 10px rgba(0, 0, 0.6));
+      transition: 0.5s ease-out;
+      margin-bottom: 20px;
     }
     :hover {
-        filter: none;
+      filter: none;
     }
     .section {
-        &__texto {
-            font-size: 20px;
-        }
-        &__paragrafo {
-            font-size: 16px;
-        }
+      &__texto {
+        font-size: 20px;
+      }
+      &__paragrafo {
+        font-size: 16px;
+      }
     }
+  }
 }
+
+@media screen and (max-width: 768px) {
+    .treinadores{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 30px 30px 30px 30px;
+        gap: 0px;
+        justify-content: center;
+        margin-top: 0px;
+    }
 }

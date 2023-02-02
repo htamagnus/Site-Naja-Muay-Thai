@@ -13,7 +13,7 @@ export default function Error404() {
       </button>
       
       <div className={styles.error}>
-        <img
+        <img className={styles.error_erro}
           src={Erro404}
           alt="Imagem de uma página com erro 404, simbolizando que não está funcionando. Contém uma ilustração de um robô arrumando suas peças"
         />
