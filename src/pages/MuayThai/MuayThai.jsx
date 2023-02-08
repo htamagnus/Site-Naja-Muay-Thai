@@ -9,9 +9,38 @@ import { TiArrowBack } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export default function MuayThai() {
-  function AbrirWhats() {
-    window.location.href = "https://wa.me/555198242196";
-  }
+  const dadosMuayThai = [
+    {
+      id: "1",
+      image: FotoMuayThai,
+      title: "O que é o Muay Thai?",
+      text: "Indiscutivelmente uma das lutas mais populares atualmente, o Muay Thai é denominado de Arte das 8 Armas pelo uso combinado das mãos, cotovelos, joelhos e pés, numa aula mais que movimentada",
+      text2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+    {
+      id: "2",
+      image: FotoMuayThai2,
+      title: "Para quem é o Muay Thai?",
+      text: "Temos uma ótima estrutura e uma ótima equipe para atender desde iniciantes e pessoas que nunca praticaram, até quem já pratica a arte. Venha entender na prática o motivo do sucesso das nossas aulas de Muay Thai.",
+      text2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+    {
+      id: "3",
+      image: FotoMuayThai3,
+      title: "Quais os benefícios do Muay Thai?",
+      text: "O Muay Thai traz mudanças perceptíveis ao corpo, tem alto gasto calórico, tonifica e ainda desenvolve um ótimo condicionamento físico, concentração e autoconfiança. Não é à toa que ganha cada vez mais adeptos, porque é uma ótima alternativa de aula e ainda trabalha o corpo como todo.",
+      text2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+  ];
 
   return (
     <>
@@ -21,105 +50,30 @@ export default function MuayThai() {
           <TiArrowBack />
         </button>
       </Link>
-      <div className={styles.muaythai}>
-        <img className={styles.muaythai__foto} src={FotoMuayThai} />
-        <section className={styles.muaythai__textos}>
-          <h2 className={styles.muaythai__titulo}>O que é o Muay Thai?</h2>
-          <p className={styles.muaythai__paragrafo}>
-            Indiscutivelmente uma das lutas mais populares atualmente, o Muay
-            Thai é denominado de “Arte das 8 Armas” pelo uso combinado das mãos,
-            cotovelos, joelhos e pés, numa aula mais que movimentada.
-          </p>
-          <p className={styles.muaythai__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            nesciunt quaerat, quibusdam fugit beatae debitis? Doloremque quis
-            tempore magni non maiores, voluptates aliquam sequi mollitia
-            temporibus officia dignissimos. Aperiam, laboriosam.
-          </p>
-          <p className={styles.muaythai__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.muaythai__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-      </div>
-
-      <div className={styles.muaythai}>
-        <section className={styles.muaythai__textos}>
-          <h2 className={styles.muaythai__titulo}>Pra quem é o Muay Thai?</h2>
-          <p className={styles.muaythai__paragrafo}>
-            Temos uma ótima estrutura e uma ótima equipe para atender desde
-            iniciantes e pessoas que nunca praticaram, até quem já pratica a
-            arte. Venha entender na prática o motivo do sucesso de nossas aulas
-            de Muay Thai.
-          </p>
-          <p className={styles.muaythai__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            nesciunt quaerat, quibusdam fugit beatae debitis? Doloremque quis
-            tempore magni non maiores, voluptates aliquam sequi mollitia
-            temporibus officia dignissimos. Aperiam, laboriosam.
-          </p>
-          <p className={styles.muaythai__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-            <button className={styles.muaythai__botao}>
-              Agende sua aula grátis!
-            </button>
-          </a>
-        </section>
-        <img
-          id={styles.esconder}
-          className={styles.muaythai__foto}
-          src={FotoMuayThai2}
-        />
-      </div>
-
-      <div className={styles.muaythai}>
-        <img
-          id={styles.esconder}
-          className={styles.muaythai__foto}
-          src={FotoMuayThai3}
-        />
-        <section className={styles.muaythai__textos}>
-          <h2 className={styles.muaythai__titulo}>
-            Quais os benefícios do Muay Thai?
-          </h2>
-          <p className={styles.muaythai__paragrafo}>
-            O Muay Thai traz mudanças perceptíveis ao corpo, tem alto gasto
-            calórico, tonifica e ainda desenvolve um ótimo condicionamento
-            físico, concentração e autoconfiança. Não é à toa que ganha cada vez
-            mais adeptos, porque é uma ótima alternativa de aula e ainda
-            trabalha o corpo como todo.
-          </p>
-          <p className={styles.muaythai__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            nesciunt quaerat, quibusdam fugit beatae debitis? Doloremque quis
-            tempore magni non maiores, voluptates aliquam sequi mollitia
-            temporibus officia dignissimos. Aperiam, laboriosam.
-          </p>
-          <p className={styles.muaythai__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.muaythai__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-      </div>
+      {dadosMuayThai.map((data) => (
+        <div key={data.id} className={styles.muaythai}>
+          <img
+            className={styles.muaythai__foto}
+            src={data.image}
+            alt="ksksdk"
+          />
+          <section className={styles.muaythai__textos}>
+            <h2 className={styles.muaythai__titulo}>{data.title}</h2>
+            <p className={styles.muaythai__paragrafo}>{data.text}</p>
+            <p className={styles.muaythai__paragrafo}>{data.text2}</p>
+            <p className={styles.muaythai__paragrafo}>{data.text3}</p>
+            <a
+              href="https://wa.me/555198242196"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className={styles.muaythai__botao}>
+                Agende sua aula grátis!
+              </button>
+            </a>
+          </section>
+        </div>
+      ))}
       <Texto texto="Turmas e horários Muay Thai" />
 
       <div className={styles.horarios}>
