@@ -9,6 +9,38 @@ import { TiArrowBack } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export default function MuayThai() {
+  const dadosFuncional = [
+    {
+      id: "1",
+      image: FotoFuncional,
+      title: "O que é o treinamento funcional?",
+      text: "É uma modalidade bem dinâmica, onde os treinos são sempre diferentes! A ideia é focar nos movimentos funcionais, que são aqueles que a gente precisa usar no dia a dia, pra correr na rua, carregar sacolas de compras, brincar com os filhos.",
+      text2:
+        "Ao contrário da musculação, o treinamento funcional trabalha o corpo como um todo, baseado em algumas capacidades físicas, como força, resistência cardio, agilidade, coordenação, potência, e tudo isso com um treino super dinâmico que nunca é igual!",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+    {
+      id: "2",
+      image: FotoFuncional2,
+      title: "Qual a diferença entre Funcional e Musculação?",
+      text: "Todo dia temos um treino diferente, não existem “fichas de treino” e nem aquele treino “chato” de academias convencionais, onde você acaba ficando 3 horas dentro pra conseguir terminar um treino, correndo na esteira e revezando aparelhos.",
+      text2:
+        "Aqui você nunca fica parado e sempre tem um professor acompanhando seus treinos e movimentos. São poucos alunos ao invés de uma sala cheia, permitindo uma atenção e, consequentemente melhor alcance dos objetivos.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+    {
+      id: "3",
+      image: FotoFuncional3,
+      title: "Treinamento Funcional Emagrece? Tem resultado?",
+      text: "No Treinamento Funcional você consegue, em uma hora, ter um alto gasto calórico e trabalhar muito o condicionamento físico e definição muscular! Ou seja, Treinamento Funcional emagrece, condiciona e fortalece! Em duas semanas você já enxerga resultado na  sua performance!",
+      text2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+  ];
   return (
     <>
       <Texto texto="Treinamento Funcional" />
@@ -17,102 +49,29 @@ export default function MuayThai() {
           <TiArrowBack />
         </button>
       </Link>
-      <div className={styles.funcional}>
-        <img className={styles.funcional__foto} src={FotoFuncional} />
-        <section className={styles.funcional__textos}>
-          <h2 className={styles.funcional__titulo}>
-            O que é o treinamento funcional?
-          </h2>
-          <p className={styles.funcional__paragrafo}>
-            É uma modalidade bem dinâmica, onde os treinos são sempre
-            diferentes! A ideia é focar nos movimentos funcionais, que são
-            aqueles que a gente precisa usar no dia a dia, pra correr na rua,
-            carregar sacolas de compras, brincar com os filhos.
-          </p>
-          <p className={styles.funcional__paragrafo}>
-            Ao contrário da musculação, o treinamento funcional trabalha o corpo
-            como um todo, baseado em algumas capacidades físicas, como força,
-            resistência cardio, agilidade, coordenação, potência, e tudo isso
-            com um treino super dinâmico que nunca é igual!
-          </p>
-          <p className={styles.funcional__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.funcional__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-      </div>
+      {dadosFuncional.map((data =>
+            <div className={styles.funcional}>
+            <img
+              className={styles.funcional__foto}
+              src={data.image}
+              alt="depois"
+            />
+            <section className={styles.funcional__textos}>
+              <h2 className={styles.funcional__titulo}>{data.title}</h2>
+              <p className={styles.funcional__paragrafo}>{data.text}</p>
+              <p className={styles.funcional__paragrafo}>{data.text2}</p>
+              <p className={styles.funcional__paragrafo}>{data.text3}</p>
+              <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
+                <button className={styles.funcional__botao}>
+                  Agende sua aula grátis!
+                </button>
+              </a>
+            </section>
+          </div>
+        ))}
 
-      <div className={styles.funcional}>
-        <section className={styles.funcional__textos}>
-          <h2 className={styles.funcional__titulo}>
-            Qual a diferença entre Funcional e Musculação?
-          </h2>
-          <p className={styles.funcional__paragrafo}>
-            Todo dia temos um treino diferente, não existem “fichas de treino” e
-            nem aquele treino “chato” de academias convencionais, onde você
-            acaba ficando 3 horas dentro pra conseguir terminar um treino,
-            correndo na esteira e revezando aparelhos.
-          </p>
-          <p className={styles.funcional__paragrafo}>
-            Aqui você nunca fica parado e sempre tem um professor acompanhando
-            seus treinos e movimentos. São poucos alunos ao invés de uma sala
-            cheia, permitindo uma atenção e, consequentemente, melhor alcance
-            dos objetivos.
-          </p>
-          <p className={styles.funcional__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.funcional__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-        <img id={styles.esconder} className={styles.funcional__foto} src={FotoFuncional2} />
-      </div>
 
-      <div className={styles.funcional}>
-        <img id={styles.esconder} className={styles.funcional__foto} src={FotoFuncional3} />
-        <section className={styles.funcional__textos}>
-          <h2 className={styles.funcional__titulo}>
-            Treinamento Funcional Emagrece? Tem resultado?
-          </h2>
-          <p className={styles.funcional__paragrafo}>
-            ​No Treinamento Funcional você consegue, em uma hora, ter um alto
-            gasto calórico e trabalhar muito o condicionamento físico e
-            definição muscular! Ou seja, Treinamento Funcional emagrece,
-            condiciona e fortalece! Em duas semanas você já enxerga resultado na
-            sua performance!
-          </p>
-          <p className={styles.funcional__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            nesciunt quaerat, quibusdam fugit beatae debitis? Doloremque quis
-            tempore magni non maiores, voluptates aliquam sequi mollitia
-            temporibus officia dignissimos. Aperiam, laboriosam.
-          </p>
-          <p className={styles.funcional__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.funcional__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-      </div>
+   
       <Texto texto="Turmas e horários funcional" />
 
       <div className={styles.horarios}>
