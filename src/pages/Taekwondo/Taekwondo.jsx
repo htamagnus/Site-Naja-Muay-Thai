@@ -9,6 +9,38 @@ import { TiArrowBack } from "react-icons/ti";
 import { Link } from "react-router-dom";
 
 export default function MuayThai() {
+  const dadosTaekwondo = [
+    {
+      id: "1",
+      image: FotoTaekwondo,
+      title: "O que é o taekwondo?",
+      text: "O boxe é um esporte olímpico onde os praticantes usam os punhos para ataques e defesas. Além de socos e esquivas, as aulas de boxe são bastante aeróbicas e envolvem pular corda, correr fazer flexão de braço, abdominais e muito mais.",
+      text2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+    {
+      id: "2",
+      image: FotoTaekwondo2,
+      title: "Pra quem é o taekwondo?",
+      text: "Nossas aulas de boxe são pra todo mundo! Você que cresceu assistindo Rocky e ouvindo sobre Muhammad Ali, Mike Tyson, Éder Jofre, entre tantas lendas do boxe, e que quer treinar com a melhor equipe e estrutura da região.",
+      text2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+    {
+      id: "3",
+      image: FotoTaekwondo3,
+      title: "Quais os benefícios do taekwondo?",
+      text: "O Muay Thai traz mudanças perceptíveis ao corpo, tem alto gasto calórico, tonifica e ainda desenvolve um ótimo condicionamento físico, concentração e autoconfiança. Não é à toa que ganha cada vez mais adeptos, porque é uma ótima alternativa de aula e ainda trabalha o corpo como todo.",
+      text2:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+      text3:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt error quasi mollitia accusantium et veniam natus odio dolores saepe recusandae, reprehenderit officia nobis veritatis obcaecatiassumenda labore molestias! Dolore, eum.",
+    },
+  ];
   return (
     <>
       <Texto texto="Taekwondo" />
@@ -17,98 +49,33 @@ export default function MuayThai() {
           <TiArrowBack />
         </button>
       </Link>
-      <div className={styles.taekwondo}>
-        <img className={styles.taekwondo__foto} src={FotoTaekwondo} />
-        <section className={styles.taekwondo__textos}>
-          <h2 className={styles.taekwondo__titulo}>O que é o taekwondo?</h2>
-          <p className={styles.taekwondo__paragrafo}>
-            O taekwondo é um esporte olímpico onde os praticantes usam os punhos
-            para ataques e defesas. Além de socos e esquivas, as aulas de
-            taekwondo são bastante aeróbicas e envolvem pular corda, correr,
-            fazer flexão de braço, abdominais e muito mais.
-          </p>
-          <p className={styles.taekwondo__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            nesciunt quaerat, quibusdam fugit beatae debitis? Doloremque quis
-            tempore magni non maiores, voluptates aliquam sequi mollitia
-            temporibus officia dignissimos. Aperiam, laboriosam.
-          </p>
-          <p className={styles.taekwondo__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.taekwondo__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-      </div>
+      {dadosTaekwondo.map((data) => (
+        <div className={styles.taekwondo}>
+          <img className={styles.taekwondo__foto} src={data.image} alt="depois"/>
+          <section className={styles.taekwondo__textos}>
+            <h2 className={styles.taekwondo__titulo}>{data.title}</h2>
+            <p className={styles.taekwondo__paragrafo}>
+              {data.text}
+            </p>
+            <p className={styles.taekwondo__paragrafo}>
+              {data.text2}
+            </p>
+            <p className={styles.taekwondo__paragrafo}>
+              {data.text3}
+            </p>
+            <a
+              href="https://wa.me/555198242196"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className={styles.taekwondo__botao}>
+                Agende sua aula grátis!
+              </button>
+            </a>
+          </section>
+        </div>
+      ))}
 
-      <div className={styles.taekwondo}>
-        <section className={styles.taekwondo__textos}>
-          <h2 className={styles.taekwondo__titulo}>Pra quem é o taekwondo?</h2>
-          <p className={styles.taekwondo__paragrafo}>
-            Nossas aulas de boxe são pra todo mundo! Você que cresceu assistindo
-            Rocky e ouvindo sobre Muhammad Ali, Mike Tyson, Éder Jofre, entre
-            tantas lendas do boxe, e que quer treinar com a melhor equipe e
-            estrutura da região. Você que quer aprender a lutar e está à procura
-            de uma academia de boxe para começar, ou você que está buscando uma
-            aula diferente, para fazer exercício e se divertir ao mesmo tempo.
-          </p>
-          <p className={styles.taekwondo__paragrafo}>
-            Você que quer aprender a lutar e está à procura de uma academia de
-            taekwondo para começar, ou você que está buscando uma aula
-            diferente, para fazer exercício e se divertir ao mesmo tempo.
-          </p>
-          <p className={styles.taekwondo__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.taekwondo__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-        <img id={styles.esconder} className={styles.taekwondo__foto} src={FotoTaekwondo2} />
-      </div>
-
-      <div className={styles.taekwondo}>
-        <img id={styles.esconder} className={styles.taekwondo__foto} src={FotoTaekwondo3} />
-        <section className={styles.taekwondo__textos}>
-          <h2 className={styles.taekwondo__titulo}>
-            Quais os benefícios do taekwondo?
-          </h2>
-          <p className={styles.taekwondo__paragrafo}>
-            Nocaute na gordura e no sedentarismo! Os treinos são intensos, com
-            queima de gordura e alta preparação física! Além disso, melhora a
-            coordenação e a liberação de endorfina garante a sensação de
-            bem-estar e alívio do stress.
-          </p>
-          <p className={styles.taekwondo__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            nesciunt quaerat, quibusdam fugit beatae debitis? Doloremque quis
-            tempore magni non maiores, voluptates aliquam sequi mollitia
-            temporibus officia dignissimos. Aperiam, laboriosam.
-          </p>
-          <p className={styles.taekwondo__paragrafo}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            error quasi mollitia accusantium et veniam natus odio dolores saepe
-            recusandae, reprehenderit officia nobis veritatis obcaecati
-            assumenda labore molestias! Dolore, eum.
-          </p>
-          <a href="https://wa.me/555198242196" target="_blank" rel="noreferrer">
-          <button className={styles.taekwondo__botao}>
-            Agende sua aula grátis!
-          </button>
-          </a>
-        </section>
-      </div>
       <Texto texto="Turmas e horários taekwondo" />
 
       <div className={styles.horarios}>
