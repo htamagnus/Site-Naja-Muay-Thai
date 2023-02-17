@@ -8,10 +8,6 @@ import MuayThai from "../../pages/MuayThai/MuayThai"
 import Boxe from "../../pages/Boxe/Boxe"
 import Taekwondo from "../../pages/Taekwondo/Taekwondo"
 import Funcional from "../../pages/Funcional/Funcional"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-AOS.init();
 
 function RoutesConfig() {
 
